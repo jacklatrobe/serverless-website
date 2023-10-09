@@ -1,5 +1,5 @@
 packages:
-  - name: joke
+  - name: personalsite
     actions:
-      - name: joke
+      - name: personalsite
         runtime: 'python:default'

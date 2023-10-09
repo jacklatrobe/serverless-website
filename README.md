@@ -1,49 +1,14 @@
-# Sample Function: Python Joke API
+# Personal Website: Jack's Corner
 
-## Introduction
+## Overview
 
-This repository contains a sample joke API function written in Python. You can deploy it on DigitalOcean's App Platform as a Serverless Function component.
-Documentation is available at https://docs.digitalocean.com/products/functions.
+This repository is forked from DigitalOcean's sample joke API function project to serve as the codebase for my personal website, hosted on DigitalOcean's App Platform as a Serverless Function component. The original functionality and deployment instructions can be found in the [original repository](https://github.com/digitalocean/sample-functions-python-jokes).
 
-### Requirements
+### Prerequisites
 
-* You need a DigitalOcean account. If you don't already have one, you can sign up at [https://cloud.digitalocean.com/registrations/new](https://cloud.digitalocean.com/registrations/new).
-* To deploy from the command line, you will need the [DigitalOcean `doctl` CLI](https://github.com/digitalocean/doctl/releases).
+* A DigitalOcean account is necessary for deploying this project. Create one [here](https://cloud.digitalocean.com/registrations/new) if you don't have one already.
+* The [DigitalOcean `doctl` CLI](https://github.com/digitalocean/doctl/releases) is required for command line operations.
 
-## Deploying the Function
+### Further Reading
 
-```
-# clone this repo
-git clone git@github.com:digitalocean/sample-functions-python-jokes.git
-```
-
-```
-# deploy the project, using "remote-build" so that the build and runtime environments match
-> doctl serverless deploy sample-functions-python-jokes --remote-build
-Deploying 'sample-functions-python-jokes'
-  to namespace 'fn-...'
-  on host 'https://faas-...'
-Submitted action 'joke' for remote building and deployment in runtime python:default
-Processing of 'joke' is still running remotely ...
-...
-Deployed functions ('doctl sbx fn get <funcName> --url' for URL):
-  - joke
-```
-
-```
-# execute the function
-> doctl serverless functions invoke joke
-{
-  "body": {
-    "response_type": "in_channel",
-    "text": "Waiter: He's choking! Is anyone a doctor? Programmer: I'm a Vim user."
-  }
-}
-```
-
-Note the CLI command can be abbreviated as `doctl sls fn invoke joke`.
-
-
-### Learn More
-
-You can learn more about Functions and App Platform integration in [the official App Platform Documentation](https://www.digitalocean.com/docs/app-platform/).
+Explore more about Functions and App Platform integration in [the official App Platform Documentation](https://www.digitalocean.com/docs/app-platform/).
