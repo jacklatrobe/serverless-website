@@ -1,5 +1,4 @@
-# Personal Website: Jack's Corner
-
+# Personal Website: jack-latrobe.com
 ## Overview
 
 This repository is forked from DigitalOcean's sample joke API function project to serve as the codebase for my personal website, hosted on DigitalOcean's App Platform as a Serverless Function component. The original functionality and deployment instructions can be found in the [original repository](https://github.com/digitalocean/sample-functions-python-jokes).
